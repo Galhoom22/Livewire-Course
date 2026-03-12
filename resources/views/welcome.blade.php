@@ -25,10 +25,10 @@
 
 
     <body class="antialiased">
-       
+       @livewire('test-properties')
         {{-- @livewire('show-post') --}}
         {{-- <livewire:show-post /> --}}
-        @livewire('post.show-post2')
+        {{-- @livewire('post.show-post2') --}}
 
         {{-- @livewireScripts --}}
         <livewire:scripts/>
