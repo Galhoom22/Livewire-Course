@@ -25,9 +25,12 @@
 
 
     <body class="antialiased">
-       @livewire('test-properties', ['name' => 'koko'])
+        @livewire('test-actions')
 
-       <livewire:test-properties name="lolo"/>
+
+       {{-- @livewire('test-properties', ['name' => 'koko']) --}}
+
+       {{-- <livewire:test-properties name="lolo"/> --}}
 
        
         {{-- @livewire('show-post') --}}
