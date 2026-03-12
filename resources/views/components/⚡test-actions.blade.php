@@ -6,12 +6,12 @@ new class extends Component
 {
     public $count = 0;
 
-    public function increment(){
-        $this->count++;
+    public function increment($param){
+        $this->count += $param;
     }
 
-    public function decrement(){
-        $this->count--;
+    public function decrement($param){
+        $this->count -= $param;
     }
 };
 ?>
@@ -20,7 +20,7 @@ new class extends Component
     <h1 style="text-align: center;">{{ $count }}</h1>
 
     <div style="text-align: center;">
-        <button wire:click="increment" style="border: 1px solid blue; padding: 0px 5px;"> + </button>
-        <button wire:click="decrement" style="border: 1px solid blue; padding: 0px 5px;"> - </button>
+        <button wire:click="increment(2)" style="border: 1px solid blue; padding: 0px 5px;"> + </button>
+        <button wire:click="decrement(5)" style="border: 1px solid blue; padding: 0px 5px;"> - </button>
     </div>
 </div>
