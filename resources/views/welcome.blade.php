@@ -23,24 +23,18 @@
         <livewire:styles/>
     </head>
 
-
     <body class="antialiased">
-        @livewire('test-actions')
+        @livewire('first-event')
+        @livewire('second-event')
 
-
+        {{-- @livewire('test-actions') --}}
        {{-- @livewire('test-properties', ['name' => 'koko']) --}}
-
        {{-- <livewire:test-properties name="lolo"/> --}}
-
-       
         {{-- @livewire('show-post') --}}
         {{-- <livewire:show-post /> --}}
         {{-- @livewire('post.show-post2') --}}
-
         {{-- @livewireScripts --}}
         <livewire:scripts/>
     </body>
 
-
 </html>
- 
