@@ -7,7 +7,7 @@ new class extends Component
 {
     #[On('fire')]
     public function ambulance(){
-        dd('ambulance');
+        dd('ambulance from second event');
     }
 };
 ?>

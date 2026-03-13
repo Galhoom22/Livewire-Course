@@ -1,10 +1,14 @@
 <?php
 
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 new class extends Component
 {
-    //
+    #[On('fire')]
+    public function ambulance(){
+        dd('ambulance from third event');
+    }
 };
 ?>
 
