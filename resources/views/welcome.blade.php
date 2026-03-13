@@ -25,8 +25,6 @@
 
     <body class="antialiased">
         @livewire('first-event')
-        @livewire('second-event')
-        @livewire('third-event')
 
         {{-- @livewire('test-actions') --}}
        {{-- @livewire('test-properties', ['name' => 'koko']) --}}
@@ -36,6 +34,15 @@
         {{-- @livewire('post.show-post2') --}}
         {{-- @livewireScripts --}}
         <livewire:scripts/>
+
+        <script>
+            document.addEventListener('livewire:initialized', () => {
+                Livewire.on('fire', () => {
+                    alert('fired');
+                });
+            });
+        </script>
+
     </body>
 
 </html>

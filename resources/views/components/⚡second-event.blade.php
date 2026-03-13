@@ -5,10 +5,10 @@ use Livewire\Attributes\On;
 
 new class extends Component
 {
-    #[On('fire')]
-    public function ambulance(){
-        dd('ambulance from second event');
-    }
+    // #[On('fire')]
+    // public function ambulance(){
+    //     dd('ambulance from second event');
+    // }
 };
 ?>
 
